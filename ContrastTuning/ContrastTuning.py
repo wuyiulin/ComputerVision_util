@@ -23,7 +23,7 @@ def ContrastTuning(img_path, contrast=0, brightness=0, f_BP=None):
     
     cv2.namedWindow("Contrast", 0)
     cv2.resizeWindow("Contrast", int(img.shape[1]/2), int(img.shape[0]/2))
-    cv2.imshow('Contrast', grey)
+    cv2.imshow('Contrast', img)
     
     while True:
         if cv2.getWindowProperty('Contrast', cv2.WND_PROP_VISIBLE) <= 0: 
