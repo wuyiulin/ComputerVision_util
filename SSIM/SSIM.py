@@ -85,6 +85,6 @@ if __name__=='__main__':
     img2_path = ''
     img1 = cv2.imread(img1_path)
     img2 = cv2.imread(img2_path)
-    print("This is SSIM(numpy): " + str(ssim_numpy(img1, img2)))
-    print("This is SSIM(torch): " + str(ssim_torch(img1, img2)))
+    print("This is SSIM(numpy): " + str("{:.3f}".format(ssim_numpy(img1, img2))))
+    print("This is SSIM(torch): " + str("{:.3f}".format(ssim_torch(img1, img2))))
     
