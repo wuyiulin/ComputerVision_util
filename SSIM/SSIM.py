@@ -81,8 +81,8 @@ def ssim_torch(img1, img2, kernel_size=11):
     return ssim_map.mean().detach().numpy()
 
 if __name__=='__main__':
-    img1_path = '/Data/Project/feature_optimal/Our_Dataset/01_Car/YOLO/images/test/18.png'
-    img2_path = '/Data/Project/feature_optimal/Our_Dataset/01_Car/YOLO/images/test/18.png'
+    img1_path = ''
+    img2_path = ''
     img1 = cv2.imread(img1_path)
     img2 = cv2.imread(img2_path)
     print("This is SSIM(numpy): " + str(ssim_numpy(img1, img2)))
